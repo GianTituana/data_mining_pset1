@@ -114,9 +114,9 @@ final_count > 0: Se verifica que el número de registros cargados sea mayor a ce
 
 **Troubleshooting** 🩺
 
-IMPORTANTE: Si los contenedores de postgres y pgadmin no arrancan despues de hacer docker-compose up -d, borrar las carpetas de warehouse y warehouseui clonadas, y volver a ejecutar el comando (docker-compose up -d)
+**IMPORTANTE: Si los contenedores de postgres y pgadmin no arrancan despues de hacer docker-compose up -d, borrar las carpetas de warehouse y warehouseui clonadas, y volver a ejecutar el comando (docker-compose up -d)**
 
-IMPORTANTE: En pgAdmin registrar un nuevo servidor con el nombre de host 'warehouse' (el general también puede ser 'warehouse') y usar el usuario y contraseña del dockercompose. Una vez creado el servidor, crear un esquema 'raw' en la base de datos 'postgres' que está por defecto.
+**IMPORTANTE: En pgAdmin registrar un nuevo servidor con el nombre de host 'warehouse' (el general también puede ser 'warehouse') y usar el usuario y contraseña del dockercompose. Una vez creado el servidor, crear un esquema 'raw' en la base de datos 'postgres' que está por defecto.**
 
 Autenticación: Verificar las credenciales en la configuración de Mage.
 
