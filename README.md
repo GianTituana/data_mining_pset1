@@ -26,6 +26,10 @@ Abre tu navegador y navega a http://localhost:6789
 Acceder a pgAdmin:
 Abre tu navegador y navega a http://localhost:8080
 
+**IMPORTANTE: Si los contenedores de postgres y pgadmin no arrancan despues de hacer docker-compose up -d, borrar las carpetas de warehouse y warehouseui clonadas, y volver a ejecutar el comando (docker-compose up -d)**
+
+**IMPORTANTE: En pgAdmin registrar un nuevo servidor con el nombre de host 'warehouse' (el general también puede ser 'warehouse') y usar el usuario y contraseña del dockercompose. Una vez creado el servidor, crear un esquema 'raw' en la base de datos 'postgres' que está por defecto.**
+
 Claro, aquí tienes un README.md completo que incluye todos los puntos que mencionaste, con una explicación clara y una estructura organizada.
 
 Descripción del Proyecto y Arquitectura 🚀
