@@ -2,7 +2,7 @@
 
 Este proyecto implementa un pipeline de datos para extraer información contable de la API de QuickBooks y cargarla en una base de datos PostgreSQL. La orquestación se gestiona con Mage.
 
-![alt text](image.png)
+![alt text](image-2.png)
 
 **Pasos para Levantar Contenedores y Configurar el Proyecto 🛠️**
 Clonar el repositorio:
