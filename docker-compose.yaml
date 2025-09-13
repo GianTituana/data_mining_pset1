@@ -1,0 +1,28 @@
+services:
+  warehouse:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: ny_taxi
+    volumes:
+      - "./warehouse:/var/lib/postgresql/data:rw"
+    ports:
+      - "5432:5432"
+  warehouseui:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    volumes:
+      - "./warehouseui:/var/lib/pgadmin"
+    ports:
+      - "8080:80"
+
+  scheduler:
+    image: mageai/mageai
+    volumes:
+      - "./scheduler_data:/home/src"
+    ports:
+      - "6789:6789"
+    command: /app/run_app.sh mage start scheduler
